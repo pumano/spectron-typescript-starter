@@ -25,7 +25,7 @@ describe("Initial test suite", () => {
 
   before(async () => {
 
-   // you can it for preconditions aka login here if needed
+   // you can use it for preconditions aka login here if needed
 
   });
 

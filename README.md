@@ -78,6 +78,10 @@ $ npm start
 $ npm run watch
 ```
 
+# Decorators
+
+ `@log` method decorator can be used for logging purposes
+
 # License
 
 This project contains electron typescript starter application (`index.html` / `src/*`)
