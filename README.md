@@ -78,3 +78,11 @@ $ npm start
 $ npm run watch
 ```
 
+# License
+
+This project contains electron typescript starter application (`index.html` / `src/*`)
+https://github.com/electron/electron-quick-start-typescript under CC0 1.0 (Public Domain)
+
+Other code under MIT license.
+
+
