@@ -1,0 +1,43 @@
+{
+  "name": "spectron-typescript-starter",
+  "version": "1.0.0",
+  "description": "Spectron TypeScript Starter for testing Electron application written with Typescript",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "lint": "tslint -c tslint.json -p tsconfig.json",
+    "test:e2e": "./node_modules/.bin/_mocha --opts ./test/e2e/mocha.opts",
+    "test:e2e:allure": "./node_modules/.bin/_mocha --opts ./test/e2e/mocha-allure.opts",
+    "clean": "rimraf node_modules dist",
+    "rebuild": "electron-builder install-app-deps",
+    "report:clean": "rimraf allure*",
+    "report:generate": "allure generate allure-results --clean -o allure-report",
+    "report:generate:open": "allure generate allure-results --clean -o allure-report && allure open allure-report",
+    "start": "npm run build && electron ./dist/main.js"
+  },
+  "repository": "https://github.com/pumano/spectron-typescript-starter",
+  "keywords": [
+    "Electron",
+    "Spectron",
+    "start",
+    "tutorial",
+    "demo",
+    "typescript"
+  ],
+  "author": "Dmitry Zakharov",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/chai": "^4.1.5",
+    "@types/mocha": "^5.2.5",
+    "@types/webdriverio": "^4.10.4",
+    "chai": "^4.2.0",
+    "electron": "^3.0.2",
+    "mocha": "^5.2.0",
+    "mocha-allure-reporter": "^1.4.0",
+    "rimraf": "^2.6.2",
+    "spectron": "^4.0.0",
+    "ts-node": "^7.0.1",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2"
+  }
+}

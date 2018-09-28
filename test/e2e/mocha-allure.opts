@@ -1,0 +1,9 @@
+###
+### Default mocha.opts with allure report
+###
+
+--require ts-node/register ./test/e2e/specs/**/*.e2e-spec.ts
+--reporter mocha-allure-reporter
+--timeout 50000
+--recursive
+--exit
