@@ -1,10 +1,16 @@
 # spectron-typescript-starter
-Spectron TypeScript Starter for e2e testing electron applications
+Spectron TypeScript Starter for e2e testing electron applications.
 
-supports electron 3+
-typescript 2.9.x
+Supports:
+* electron 3+ 
+* Typescript 2.9.x
+* Spectron 4.x (webdriverio under the hood) 
 
+Starter use:
+* `async` / `await`
+* `page objects` pattern
 
+# Project sctructure
 `src` -- folder for your project's electron source code (contains electron typescript starter: https://github.com/electron/electron-quick-start-typescript)
 
 `test` -- folder for tests
